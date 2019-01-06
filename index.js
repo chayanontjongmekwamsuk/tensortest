@@ -8,7 +8,6 @@ var url = "mongodb://heroku_njnl7gg8:4deq2d8ls594bd7fg6qblkdbhl@ds121960.mlab.co
 const tf = require('@tensorflow/tfjs');
 
 app.get('/', (req, res) => {
-    app.get('/', (req, res) => {
         MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           var dbo = db.db("heroku_njnl7gg8");    
