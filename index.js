@@ -18,13 +18,15 @@ app.get('/', (req, res) => {
             temp[1] = 1;
             temp[2] = 2;
             temp[3] = 3;
+            /*
             tf.tensor(temp, [2, 2]).print();
             const verbose = true;
             tf.tensor2d([1, 2, 3, 4], [2, 2]).print(verbose);
+            */
 
         dbo.Collection('tensor').insertOne(temp, function(err, res)  {                  
             if (err) throw err;
-            console.log("tensorflow work");
+            console.log(temp);
             db.close();
         });
     });
