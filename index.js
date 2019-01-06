@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 4000
 
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://heroku_dbvccwc3:dmf1uks1spnerlpqhcikdvlgv5@ds247944.mlab.com:47944/heroku_dbvccwc3";
+var url = "mongodb://heroku_njnl7gg8:4deq2d8ls594bd7fg6qblkdbhl@ds121960.mlab.com:21960/heroku_njnl7gg8";
 
 const tf = require('@tensorflow/tfjs');
 
