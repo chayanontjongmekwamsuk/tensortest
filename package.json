@@ -1,0 +1,16 @@
+{
+  "name": "testtensor",
+  "version": "1.0.0",
+  "description": "test_for_pushing_on_heroku",
+  "main": "index.js",
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.14.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "push"
+  },
+  "author": "tube",
+  "license": "ISC"
+}
