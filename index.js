@@ -13,6 +13,13 @@ app.get('/', (req, res) => {
           if (err) throw err;
           var dbo = db.db("heroku_njnl7gg8");    
 
+          var myobj = { name: "Company Inc", address: "Highway 37" };
+          dbo.collection("customers").insertOne(myobj, function(err, res) {
+            if (err) throw err;
+            console.log("1 document inserted");
+            db.close();
+          });
+            /*
             var temp = Array(4);
             temp[0] = 0;
             temp[1] = 1;
@@ -23,12 +30,13 @@ app.get('/', (req, res) => {
             const verbose = true;
             tf.tensor2d([1, 2, 3, 4], [2, 2]).print(verbose);
             */
-
+        /*
         dbo.Collection('tensor').insertOne(temp, function(err, res)  {                  
             if (err) throw err;
             console.log(temp);
             db.close();
         });
+        */
     });
 });
 
