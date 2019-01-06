@@ -22,9 +22,9 @@ app.get('/', (req, res) => {
             const verbose = true;
             tf.tensor2d([1, 2, 3, 4], [2, 2]).print(verbose);
 
-        dbo.createCollection('tensor').insertOne(temp, function(err, res)                    
+        dbo.Collection('tensor').insertOne(temp, function(err, res)  {                  
             if (err) throw err;
-            console.log("tensorflow_work");
+            console.log("tensorflow work");
             db.close();
         });
     });
